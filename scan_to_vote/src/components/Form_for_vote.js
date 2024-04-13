@@ -14,7 +14,7 @@ function FormForVote() {
   useEffect(() => {
     // Fetch the list of teams from your server
     axios
-      .get("http://localhost:3001/getTeams")
+      .get("https://inquisitive-duck-jodhpurs.cyclic.app/getTeams")
       .then((response) => setTeams(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -62,14 +62,14 @@ function FormForVote() {
     };
 
     axios
-      .post("http://localhost:3001/check", {ipAddress})
+      .post("https://inquisitive-duck-jodhpurs.cyclic.app/check", {ipAddress})
       .then((result) => {
         if (result.data === "Record Exists") {
           console.log("Already Exists Data")
           navigate('/failure');
         }else {
           axios
-          .post("http://localhost:3001/getdata", data)
+          .post("https://inquisitive-duck-jodhpurs.cyclic.app/getdata", data)
           .then((result) => {
             console.log(result.data);
             navigate('/success');
