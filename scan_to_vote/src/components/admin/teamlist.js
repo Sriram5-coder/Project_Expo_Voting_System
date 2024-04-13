@@ -11,7 +11,7 @@ function Teamlist() {
   useEffect(() => {
     // Fetch the list of teams from your server
     axios
-      .get("http://localhost:3001/getTeams")
+      .get("https://inquisitive-duck-jodhpurs.cyclic.app/getTeams")
       .then((response) => setTeams(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -19,7 +19,7 @@ function Teamlist() {
   const handleDeleteTeam = (teamName) => {
     // Make an axios call to your server to delete the team by name
     axios
-      .delete(`http://localhost:3001/teams/${teamName}`)
+      .delete(`https://inquisitive-duck-jodhpurs.cyclic.app/teams/${teamName}`)
       .then((response) => {
         // Reload the page to update the table with the latest data
         window.location.reload();
