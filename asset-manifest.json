@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Project_Expo_Voting_System/static/css/main.da325986.css",
+    "main.js": "/Project_Expo_Voting_System/static/js/main.d7a2bbea.js",
+    "static/js/787.3ae2bb03.chunk.js": "/Project_Expo_Voting_System/static/js/787.3ae2bb03.chunk.js",
+    "index.html": "/Project_Expo_Voting_System/index.html",
+    "main.da325986.css.map": "/Project_Expo_Voting_System/static/css/main.da325986.css.map",
+    "main.d7a2bbea.js.map": "/Project_Expo_Voting_System/static/js/main.d7a2bbea.js.map",
+    "787.3ae2bb03.chunk.js.map": "/Project_Expo_Voting_System/static/js/787.3ae2bb03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da325986.css",
+    "static/js/main.d7a2bbea.js"
+  ]
+}
