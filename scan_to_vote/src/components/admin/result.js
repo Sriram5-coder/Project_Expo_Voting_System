@@ -10,7 +10,7 @@ function Result() {
 
   useEffect(() => {
     // Make a GET request to your Express.js server's API endpoint
-    axios.get('http://localhost:3001/team-vote-counts')
+    axios.get('https://inquisitive-duck-jodhpurs.cyclic.app/team-vote-counts')
       .then((response) => {
         const { teamCounts, winningTeam, runnerUpTeam } = response.data;
         setTeamVoteCounts(teamCounts);
